@@ -104,11 +104,14 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.stroke();
 
   //draw a new letter T on top of the UT symbol
-    context.strokeStyle = "acdad7" //light teal color
-    context.lineWidth = 5 //thinner line than original line
-    context.beginPath(); //begins the path of drawing
-    context.moveTo(80,196.4); //where the first line starts
-    context.lineTo(280,196.4); //where first line ends
+  context.strokeStyle = "#acdad7"; //light teal color
+  context.lineWidth = 5 //thinner line than original line
+  context.beginPath(); //begins the path of drawing
+  context.moveTo(80,196.4); //where the first line starts
+  context.lineTo(280,196.4); //where first line ends
+  context.moveTo(180, 196.4); //where vertical line begins and pen "moves to"
+  context.lineTo(180, 345); //where vertical line ends
+  context.stroke();
 
     </script>
 		
