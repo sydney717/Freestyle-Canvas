@@ -48,7 +48,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-flat-turquoise">
 	<h1>Freestyle-Canvas</h1>
 </div>
 	
@@ -103,12 +103,17 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.lineTo(cx, cy + scale / 1);
   context.stroke();
 
+  //draw a new letter T on top of the UT symbol
+    context.strokeStyle = "acdad7" //light teal color
+    context.lineWidth = 5 //thinner line than original line
+    context.beginPath();
+
     </script>
 		
 	</p>
 </div>
 	
-<footer class="w3-bottom w3-container w3-flat-carrot">
+<footer class="w3-bottom w3-container w3-flat-turquoise">
 	<p>DIY!</p>
 </footer>
 
