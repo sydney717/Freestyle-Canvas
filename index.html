@@ -95,9 +95,11 @@ context.clearRect(0, 0, canvas.width, canvas.height);
 
   //draw a new leter U on top of the UT symbol
         context.strokeStyle = "#acdad7"; //light teal
-        
-        context.beginPath();
-
+        context.lineWidth = 5; //thinner line than the original line
+        context.beginPath(); //command to begin drawing
+        context.moveTo(120,139.3);
+        context.lineTo(120,285);
+        context.stroke();
     </script>
 		
 	</p>
