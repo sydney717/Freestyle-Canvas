@@ -112,9 +112,27 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.moveTo(180, 196.4); //where vertical line begins and pen "moves to"
   context.lineTo(180, 345); //where vertical line ends
   context.stroke();
-   */
+   
    context.fillRect(50,100,30,60); //created black rectangle using coordinates and filled it
-//NOTE TO SELF: START AT STEP 3 ON STUDENT GUIDE
+*/
+/* RECTANGLE OUTLINE AND FILLING:
+ context.lineWidth = 15; //changes line width
+ context.strokeStyle = "#acdad7"; //light teal coloring
+ context.strokeRect(50,100,30,60); //created rectangle outline
+
+ context.fillStyle = "red"; //red coloring
+ context.fillRect(65,130,250,75) //created red rectangle overlay
+ */
+ /* CIRCLE DRAWING:
+ context.strokeStyle = "red"; //made circle outline red
+ context.lineWidth = 5; //made circle outline have a width of 5
+ context.fillStyle = "blue"; //made interior of circle blue
+ context.beginPath(); //started drawing
+ context.arc(180, 225, 50, 0, 2*Math.PI); //calculated arc drawing
+ context.fill(); //filled interior of circle
+ context.stroke(); //drew circle
+ */
+
         </script>
 		
 	</p>
