@@ -132,6 +132,28 @@ context.clearRect(0, 0, canvas.width, canvas.height);
  context.fill(); //filled interior of circle
  context.stroke(); //drew circle
  */
+//HALF CIRCLE:
+//drawing half circle
+ context.strokeStyle = "red"; //made circle outline red
+ context.lineWidth = 5; //made circle outline have a width of 5
+ context.fillStyle = "blue"; //made interior of circle blue
+ context.beginPath(); //started drawing
+ context.arc(180, 225, 50, 18/12*Math.PI, 6/12*Math.PI); //calculated arc drawing for semicircle
+ context.closePath(); //closed the semicircle path with a red line
+ context.fill(); //filled interior of circle
+ context.stroke(); //drew circle
+/* QUARTER CIRCLE:
+ //drawing quarter circle
+ context.strokeStyle = "red";
+ context.lineWidth = 5;
+ context.fillStyle = "blue";
+ context.beginPath();
+ context.moveTo(180, 375);
+ context.arc(180, 375, 50, 18/12*Math.PI, 2*Math.PI);
+ context.closePath();
+ context.fill();
+ context.stroke();
+ */
 
         </script>
 		
