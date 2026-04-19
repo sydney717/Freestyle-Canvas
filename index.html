@@ -132,8 +132,9 @@ context.clearRect(0, 0, canvas.width, canvas.height);
  context.fill(); //filled interior of circle
  context.stroke(); //drew circle
  */
-//HALF CIRCLE:
+/*HALF CIRCLE:
 //drawing half circle
+
  context.strokeStyle = "red"; //made circle outline red
  context.lineWidth = 5; //made circle outline have a width of 5
  context.fillStyle = "blue"; //made interior of circle blue
@@ -142,6 +143,7 @@ context.clearRect(0, 0, canvas.width, canvas.height);
  context.closePath(); //closed the semicircle path with a red line
  context.fill(); //filled interior of circle
  context.stroke(); //drew circle
+ */
 /* QUARTER CIRCLE:
  //drawing quarter circle
  context.strokeStyle = "red";
@@ -154,8 +156,23 @@ context.clearRect(0, 0, canvas.width, canvas.height);
  context.fill();
  context.stroke();
  */
+ /* TRIANGLE:
+ context.strokeStyle = "green" //colors outline green
+ context.lineWidth = 7 //thickness of outline
+ context.fillStyle = "lightblue" //color of interior
+ context.beginPath(); //start line drawing
+ context.moveTo(50,50); //the first point
+ context.lineTo(50,200); //draws the line from first to second point
+ context.lineTo(150,200); //draws line from second to third point
+ context.closePath(); //draws line from last to first point
+ context.fill(); //fills in the triangle
+ context.stroke(); //draws outline
+ */
 
-        </script>
+ 
+
+        </script> 
+        <!-- closes script -->
 		
 	</p>
 </div>
