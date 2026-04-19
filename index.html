@@ -177,8 +177,47 @@ context.ellipse(150, 100, 80, 40, 22/12*Math.PI, 0, 2*Math.PI);
 context.fill();
 context.stroke();
 */
+ //HOUSE BODY:
+ context.lineWidth = 10; //changes line width
+ context.strokeStyle = "#78442c"; //dark brown coloring
+ context.strokeRect(80,300,200,125); //created house outline
+ context.fillStyle = "brown"; //colored house
+ context.fillRect(80,300,200,125); //created body of house
+ 
+ //WINDOW:
+ context.lineWidth = 5; //line width
+ context.strokeStyle = "#4287ae"; //window outline
+ context.strokeRect(95,340,45,45); //creates window
+ context.fillStyle = "#acdad7"; //window fill color
+ context.fillRect(95, 340, 45, 45); //fills window
 
+ //DOOR:
+  context.lineWidth = 5; //line width
+ context.strokeStyle = "#653d05"; //door outline
+ context.strokeRect(200,340,45,85); //creates window
+ context.fillStyle = "#78442c"; //door fill color
+ context.fillRect(200, 340, 45, 85); //fills window
 
+ //ROOF:
+ context.strokeStyle = "653d05" //colors outline dark brown
+ context.lineWidth = 7 //thickness of outline
+ context.fillStyle = "#78442c" //color of interior
+ context.beginPath(); //start line drawing
+ context.moveTo(315,300); //the first point
+ context.lineTo(60,300); //draws the line from first to second point
+ context.lineTo(170,200); //draws line from second to third point
+ context.closePath(); //draws line from last to first point
+ context.fill(); //fills in the triangle
+ context.stroke(); //draws outline
+
+ //DOORKNOB:
+ context.strokeStyle = "#653d05"; //made circle outline dark brown
+ context.lineWidth = 3; //made circle outline have a width of 3
+ context.fillStyle = "#f9e977"; //made interior of circle yellow
+ context.beginPath(); //started drawing
+ context.arc(230, 390, 10, 0, 2*Math.PI); //calculated arc drawing
+ context.fill(); //filled interior of circle
+ context.stroke(); //drew circle
  
 
         </script> 
